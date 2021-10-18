@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:slider/httpHello.dart';
+import 'package:slider/views/form_view.dart';
+import 'package:slider/widget/container.dart';
+import 'package:slider/widget/scaffold.dart';
 import 'package:slider/widget/shadow.dart';
 
 void main() => runApp(MyApp());
@@ -8,8 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: HttpHello(),
+      title: 'Veli Bacık Dersleri',
+      debugShowCheckedModeBanner: false,
+      routes: {
+        "/tutorail": (context) => TutorailOnePage(),
+        "/tutorail2": (context) => TutorialButtonPage(),
+        "/http": (context) => HttpHello(),
+      },
+      home: ScaffoldView(),
     );
   }
 }

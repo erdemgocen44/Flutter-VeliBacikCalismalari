@@ -22,10 +22,10 @@ class _HttpHelloState extends State<HttpHello> {
   // }
 
   void getApiJohnName() async {
-    var data = (await http
+    return (await http
             .get("https://hwasampleapi.firebaseio.com/api/books/0/author.json"))
         .body;
-    data = json.decode(data);
+
     // setState(() {
     //   isHaveData = !isHaveData;
     //   this.data = data;
@@ -48,7 +48,22 @@ class _HttpHelloState extends State<HttpHello> {
     //   ],
     // );
     return Scaffold(
-      body: Container(),
+      body: Center(
+          // child: FutureBuilder(
+          //   future: getApiJohnName(),
+          //   builder: (context, snapshot) {
+          //     if (snapshot.connectionState == ConnectionState.done) {
+          //       if (snapshot.hasData) {
+          //         return Text(json.decode(snapshot.data));
+          //         else Text("You have error. look at API");
+          //       }else if(snapshot.connectionState==ConnectionState.waiting){
+          //         return CircularProgressIndicator();
+          //       }else return Text("You have error. are u sure API");
+
+          //     }
+          //   },
+          // ),
+          ),
     );
   }
 }
