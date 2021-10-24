@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:slider/httpHello.dart';
 import 'package:slider/views/form_view.dart';
 import 'package:slider/widget/container.dart';
+import 'package:slider/widget/degisenWidget.dart';
 import 'package:slider/widget/scaffold.dart';
 import 'package:slider/widget/shadow.dart';
+import "dart:html";
 
 void main() => runApp(MyApp());
 
@@ -11,14 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: Colors.blueGrey,
+      ),
       title: 'Veli Bacık Dersleri',
       debugShowCheckedModeBanner: false,
       routes: {
         "/tutorail": (context) => TutorailOnePage(),
         "/tutorail2": (context) => TutorialButtonPage(),
-        "/http": (context) => HttpHello(),
       },
-      home: ScaffoldView(),
+      home: DegisenWidget(),
     );
   }
 }
