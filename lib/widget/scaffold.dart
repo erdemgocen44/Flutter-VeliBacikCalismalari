@@ -1,12 +1,12 @@
-import 'dart:js';
 
-import 'package:flutter/material.dart';
 
-void main() => runApp(ScaffoldView());
+        import 'package:flutter/material.dart';
 
-class ScaffoldView extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
+        void main() => runApp(ScaffoldView());
+
+    class ScaffoldView extends StatelessWidget {
+    @override
+    Widget build(BuildContext context) {
     MediaQueryData queryData;
     queryData = MediaQuery.of(context);
     return Scaffold(
