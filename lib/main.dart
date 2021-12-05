@@ -33,12 +33,12 @@ class TutorailOnePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ShadowWidget(
       elevation: 15,
-      color: Colors.amber,
+      color: Colors.amberAccent,
       child: Container(
         child: Text(
           "Mervem",
           style: TextStyle(
-            color: Colors.red,
+            color: Colors.redAccent,
             fontWeight: FontWeight.w500,
             fontStyle: FontStyle.normal,
             fontFamily: "Mukta",

@@ -23,7 +23,7 @@ class _ContainerViewState extends State<ContainerView> {
             padding: EdgeInsets.all(20),
             child: Container(
               alignment: Alignment.center,
-              color: Colors.blueGrey,
+              color: Colors.grey,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
