@@ -18,9 +18,9 @@ class _ContainerViewState extends State<ContainerView> {
           alignment: Alignment.center,
           child: Container(
             alignment: Alignment.center,
-            color: Colors.pinkAccent,
-            margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(20),
+            color: Colors.pink,
+            margin: EdgeInsets.all(10),
+            padding: EdgeInsets.all(10),
             child: Container(
               alignment: Alignment.center,
               color: Colors.grey,
